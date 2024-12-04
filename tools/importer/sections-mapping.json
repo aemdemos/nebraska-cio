@@ -178,40 +178,29 @@
           "id": "3-1",
           "blocks": [
             {
-              "id": "box-id--435520319",
-              "x": 24,
-              "y": 8518,
-              "width": 255,
-              "height": 120,
-              "xpath": "/html[1]/body[1]/footer[1]/ul[1]",
-              "layout": {
-                "numCols": 0,
-                "numRows": 0
-              },
-              "color": "rgba(148, 0, 211, 0.4)",
-              "mapping": "defaultContent",
-              "customBlockName": ""
-            }
-          ],
-          "settings": {}
-        },
-        {
-          "id": "3-2",
-          "blocks": [
-            {
-              "id": "box-id--435520288",
-              "x": 1888,
+              "id": "box-id--953139808",
+              "x": 0,
               "y": 8512,
-              "width": 551,
+              "width": 2487,
               "height": 120,
-              "xpath": "/html[1]/body[1]/footer[1]/ul[2]",
+              "xpath": "/html[1]/body[1]/footer[1]",
               "layout": {
-                "numCols": 0,
-                "numRows": 0
+                "numCols": 2,
+                "numRows": 1
               },
-              "color": "rgba(148, 0, 211, 0.4)",
-              "mapping": "defaultContent",
-              "customBlockName": ""
+              "childrenXpaths": [
+                {
+                  "xpath": "/html[1]/body[1]/footer[1]/ul[1]",
+                  "xpathWithDetails": "id(\"footer\")/ul[@class=\"actions\"]"
+                },
+                {
+                  "xpath": "/html[1]/body[1]/footer[1]/ul[2]",
+                  "xpathWithDetails": "id(\"footer\")/ul[@class=\"menu\"]"
+                }
+              ],
+              "color": "rgb(148, 0, 211)",
+              "mapping": "columns",
+              "customBlockName": "footer-columns"
             }
           ],
           "settings": {}
