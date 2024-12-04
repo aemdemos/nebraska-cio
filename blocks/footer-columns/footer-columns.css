@@ -1,32 +1,81 @@
-.footer-columns > div {
+
+.footer-columns-wrapper .footer-columns {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  background-color: #2f3e48; /* Adjust to match the dark background in the original image */
+  padding: 10px; /* Optional padding for spacing */
 }
 
-.footer-columns img {
-  width: 100%;
+.footer-columns-wrapper .footer-columns > div {
+    width: 100%;
+  display: flex;
+    justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px; /* Ensure gap between the two main sections */
 }
 
-.footer-columns > div > div {
-  order: 1;
+.footer-columns-wrapper .footer-columns .footer-columns-img-col ul {
+  display: flex;
+  gap: 20px; /* Adjust spacing between icons to match the original image */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.footer-columns > div > .footer-columns-img-col {
-  order: 0;
+.footer-columns-wrapper .footer-columns .footer-columns-img-col li {
+  display: flex;
 }
 
-.footer-columns > div > .footer-columns-img-col img {
-  display: block;
+.footer-columns-wrapper .footer-columns .footer-columns-img-col img {
+  width: auto;
+  height: auto;
 }
 
-@media (width >= 900px) {
-  .footer-columns > div {
+.footer-columns-wrapper .footer-columns > div > div ul {
+  display: flex;
+  gap: 20px; /* Adjust spacing between text items to match the original image */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.footer-columns-wrapper .footer-columns > div > div:last-child ul {
+    justify-content: flex-end;
+}
+
+.footer-columns-wrapper .footer-columns > div > div ul li {
+  display: flex;
+  align-items: center;
+  color: #b0bec5; /* Adjust text color to match the light color in the original image */
+  font-size: 14px; /* Adjust font size to match the original image */
+}
+
+.footer-columns-wrapper .footer-columns > div > div ul li:not(:last-child)::after {
+  content: '|';
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #b0bec5; /* Adjust divider color to match text color */
+}
+
+.footer-columns-wrapper .footer-columns > div > div ul li a {
+  color: #b0bec5; /* Adjust link color to match text color */
+  text-decoration: none; /* Remove underline for links */
+}
+
+.footer-columns-wrapper .footer-columns > div > div ul li a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+}
+
+@media (min-width: 900px) {
+  .footer-columns-wrapper .footer-columns > div {
     align-items: center;
-    flex-direction: unset;
-    gap: 24px;
+    flex-direction: row;
+    gap: 40px; /* Ensure gap between the two main sections */
   }
 
-  .footer-columns > div > div {
+  .footer-columns-wrapper .footer-columns > div > div {
     flex: 1;
     order: unset;
   }
