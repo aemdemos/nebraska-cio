@@ -78,7 +78,9 @@
               "customBlockName": ""
             }
           ],
-          "settings": {}
+          "settings": {
+            "section-background": true
+          }
         },
         {
           "id": "2-2",
